@@ -79,47 +79,49 @@ function Header() {
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-0 text-sm">
+        <nav className="hidden md:flex items-center gap-2 text-sm">
           <a
-            className="ml-1 rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
+            className="rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
             style={{ background: "#243633", color: "#FFFFFF" }}
             href="#why"
           >
             Why Caliber
           </a>
           <a
-            className="ml-2 rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
+            className="rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
             style={{ background: "#243633", color: "#FFFFFF" }}
             href="#services"
           >
             Services
           </a>
           <a
-            className="ml-2 rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
+            className="rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
             style={{ background: "#243633", color: "#FFFFFF" }}
             href="#rescue"
           >
             Project Rescue
           </a>
           <a
-            className="ml-2 rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
+            className="rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
             style={{ background: "#243633", color: "#FFFFFF" }}
             href="#process"
           >
             Process
           </a>
           <a
-            className="ml-2 rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
+            className="rounded-full px-4 py-2 border hover:text-[var(--brand-accent)]"
             style={{ background: "#243633", color: "#FFFFFF" }}
             href="#contact"
           >
             Contact
           </a>
+
           <a
             href="tel:+15550000000"
-            className="ml-4 flex items-center gap-2 px-3 py-2 rounded-full hover:bg-gray-50 transition-all group"
+            className="flex items-center gap-2 px-4 py-2 rounded-full border hover:text-[var(--brand-accent)] transition-all group"
+            style={{ background: "#243633", color: "#FFFFFF" }}
           >
-            <div className="p-1.5 rounded-full bg-orange-50 text-orange-600 group-hover:bg-orange-100 transition-colors">
+            <div className="p-1.5 rounded-full bg-white/10 text-white group-hover:bg-white/20 transition-colors">
               <svg
                 width="14"
                 height="14"
@@ -133,9 +135,10 @@ function Header() {
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.11-2.12a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
             </div>
-            <span className="font-bold text-[var(--brand-primary)] whitespace-nowrap">+1 (555) 000-0000</span>
+            <span className="whitespace-nowrap">Call Now</span>
           </a>
-          <a
+
+          {/* <a
             className="ml-3 rounded-full px-4 py-2 border hover:shadow-sm"
             style={{
               borderColor: "rgba(0,0,0,0.08)",
@@ -145,7 +148,8 @@ function Header() {
             href="#contact"
           >
             Book a consult
-          </a>
+          </a> */}
+
         </nav>
 
         <div className="md:hidden flex items-center gap-2">
@@ -252,6 +256,7 @@ function Header() {
             >
               Process
             </a>
+
             <a
               className="rounded-lg px-3 py-2 hover:bg-[rgba(0,0,0,0.03)] transition-colors active:bg-[rgba(0,0,0,0.05)] text-[var(--brand-accent)] font-semibold"
               style={{ background: "rgba(116,141,125,0.08)" }}
@@ -260,6 +265,7 @@ function Header() {
             >
               Book a consult
             </a>
+
           </div>
         </div>
       )}
@@ -317,7 +323,7 @@ function Hero() {
             className="mt-6 space-y-3"
             style={{ color: "var(--brand-text)" }}
           >
-            <li className="flex items-start gap-3 p-2 rounded-lg bg-orange-50 border border-orange-100 font-semibold shadow-sm overflow-hidden relative group">
+            <li className="flex items-start gap-3 p-2 rounded-lg bg-orange-100 font-bold shadow-md overflow-hidden relative group">
               <div className="absolute inset-0 bg-white/40 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
               <Check /> Rescue specialists — we fix failed projects.
             </li>
@@ -343,7 +349,7 @@ function Hero() {
               href="#contact"
               className="rounded-xl px-5 py-3 font-medium border border-gray-200 hover:bg-gray-50 transition-all text-sm"
             >
-              Get a second opinion on your BC setup
+              Talk to a senior consultant
             </a>
             <a
               href="#services"
@@ -497,11 +503,11 @@ function Services() {
     { title: "Integrations", desc: "REST, GRAPH, SOAP, ODATA" },
     {
       title: "Performance Tuning",
-      desc: "Indexing, telemetry, bottleneck analysis, and refactors that shave hours to minutes.",
+      desc: "We fix slow processes and make Business Central run faster",
     },
     {
       title: "Project Rescue",
-      desc: "Triage, recovery plans, scope reset, and stakeholder alignment to get value back on track.",
+      desc: "We diagnose failing projects, reset expectations, and bring delivery back under control.",
     },
     {
       title: "Advisory & Architecture",
